@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+     <!--
+      create.html
+
+      Página para agregar un nuevo alumno a la base de datos.
+      Contiene un formulario que envía los datos mediante POST
+      al mismo endpoint '/create' en la aplicación Flask.
+    -->
+    <title>Crear Alumno</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Alumno</h1>
+    <form method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Apellido:</label><br>
+        <input type="text" name="apellido" required><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad" required><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <br>
+    <a href="/">← Volver a la lista</a>
+</body>
+</html>

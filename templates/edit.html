@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+     <!--
+      edit.html
+
+      Página para editar los datos de un alumno específico.
+      Muestra  los valores actuales cargados,
+      permitiendo al usuario modificarlos y enviar los cambios.
+    -->
+    
+    <title>Editar Alumno</title>
+</head>
+<body>
+     <!--
+      Encabezado principal de la página.
+      Indica al usuario que está editando un registro de alumno.
+    -->
+    <h1>Editar Alumno</h1>
+    <form method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" value="{{ alumno.nombre }}" required><br><br>
+
+        <label>Apellido:</label><br>
+        <input type="text" name="apellido" value="{{ alumno.apellido }}" required><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad" value="{{ alumno.edad }}" required><br><br>
+
+        <button type="submit">Actualizar</button>
+    </form>
+    <br>
+    <a href="/">← Volver a la lista</a>
+</body>
+</html>
